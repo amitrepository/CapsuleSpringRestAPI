@@ -47,6 +47,7 @@ public class TaskController {
 	  taskVO.setPriority(priority);
 	  taskManagerService.saveTask(taskVO);
 	  return taskManagerService.getAllTasks();
+		  
 	  }    
 	
 	@RequestMapping(value="/getTask/{taskName}",method = RequestMethod.GET,headers="Accept=application/json")
